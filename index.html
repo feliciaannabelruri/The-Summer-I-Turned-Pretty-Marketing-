@@ -225,10 +225,72 @@
             </div>
         </section>
 
-        <!-- Community Building Section -->
+        <!-- Interactive Game Section -->
         <section class="section animate-on-scroll">
             <div class="section-header">
                 <div class="section-number">06</div>
+                <h2 class="section-title">Interactive Experience</h2>
+                <p class="section-description">Experience the magic of Cousins Beach through our interactive seashell collection game.</p>
+            </div>
+
+            <div class="game-section">
+                <div class="game-intro">
+                    <h3 class="game-title">Summer Seashell Hunt</h3>
+                    <p class="game-description">Dive into the world of TSITP and collect magical seashells from Cousins Beach! Click on the seashells as they appear and build combos for bonus points.</p>
+                    <button class="start-game-btn" onclick="toggleGame()">Start Game</button>
+                </div>
+
+                <div class="game-container" id="gameContainer" style="display: none;">
+                    <div class="game-header">
+                        <h4 class="game-active-title">Cousins Beach Seashell Hunt</h4>
+                    </div>
+
+                    <div class="game-stats">
+                        <div class="stat-item">
+                            <span>Score:</span>
+                            <span class="stat-value" id="score">0</span>
+                        </div>
+                        <div class="stat-item">
+                            <span>Shells:</span>
+                            <span class="stat-value" id="shellCount">0</span>
+                        </div>
+                        <div class="stat-item">
+                            <span>Time:</span>
+                            <span class="stat-value" id="timeLeft">60s</span>
+                        </div>
+                        <div class="stat-item">
+                            <span>Combo:</span>
+                            <span class="stat-value" id="combo">0</span>
+                        </div>
+                    </div>
+
+                    <div class="combo-indicator" id="comboIndicator"></div>
+                    <div class="sand-particles" id="sandParticles"></div>
+                    <div class="game-wave"></div>
+
+                    <div class="game-instructions">
+                        Tap the seashells to collect them! Get combos for bonus points!
+                    </div>
+                </div>
+
+                <div class="game-over" id="gameOver">
+                    <div class="game-over-content">
+                        <h4 class="game-over-title">Game Over!</h4>
+                        <div class="final-score">
+                            Final Score: <span id="finalScore">0</span><br>
+                            Shells Collected: <span id="finalShells">0</span>
+                        </div>
+                        <button class="restart-btn" onclick="restartGame()">Play Again</button>
+                        <button class="close-game-btn" onclick="closeGame()">Close Game</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Community Building Section -->
+        <section class="section animate-on-scroll">
+            <div class="section-header">
+                <div class="section-number">07</div>
                 <h2 class="section-title">Community & Fandom Dynamics</h2>
                 <p class="section-description">Leveraging love triangle dynamics to create sustained engagement.</p>
             </div>
@@ -260,119 +322,10 @@
             </div>
         </section>
 
-        <!-- Release Strategy Section -->
-        <section class="section animate-on-scroll">
-            <div class="section-header">
-                <div class="section-number">07</div>
-                <h2 class="section-title">Strategic Release Approach</h2>
-                <p class="section-description">Timing and format decisions that maximized audience engagement and retention.</p>
-            </div>
-
-            <div class="content-grid">
-                <div class="content-card">
-                    <h3 class="card-title">Summer Timing</h3>
-                    <div class="card-content">
-                        <ul>
-                            <li>Perfect thematic alignment</li>
-                            <li>Target audience availability</li>
-                            <li>Seasonal mood enhancement</li>
-                            <li>Marketing message reinforcement</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="content-card">
-                    <h3 class="card-title">Weekly Episode Strategy</h3>
-                    <div class="card-content">
-                        <ul>
-                            <li>Sustained weekly conversations</li>
-                            <li>Theory and speculation building</li>
-                            <li>Extended engagement periods</li>
-                            <li>Community discussion facilitation</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="content-card">
-                    <h3 class="card-title">Cliffhanger Marketing</h3>
-                    <div class="card-content">
-                        <ul>
-                            <li>Viral moment creation</li>
-                            <li>TikTok-ready content</li>
-                            <li>Discussion starter events</li>
-                            <li>Anticipation building</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Interactive Game Section -->
-        <section class="section animate-on-scroll">
-            <div class="section-header">
-                <div class="section-number">08</div>
-                <h2 class="section-title">Interactive Experience</h2>
-                <p class="section-description">Experience the magic of Cousins Beach through our interactive seashell collection game.</p>
-            </div>
-
-            <div class="game-section">
-                <div class="game-intro">
-                    <h3 class="game-title">🏖️ Summer Seashell Hunt</h3>
-                    <p class="game-description">Dive into the world of TSITP and collect magical seashells from Cousins Beach! Click on the seashells as they appear and build combos for bonus points.</p>
-                    <button class="start-game-btn" onclick="toggleGame()">🐚 Start Game</button>
-                </div>
-
-                <div class="game-container" id="gameContainer" style="display: none;">
-                    <div class="game-header">
-                        <h4 class="game-active-title">🏖️ Cousins Beach Seashell Hunt</h4>
-                    </div>
-
-                    <div class="game-stats">
-                        <div class="stat-item">
-                            <span>Score:</span>
-                            <span class="stat-value" id="score">0</span>
-                        </div>
-                        <div class="stat-item">
-                            <span>Shells:</span>
-                            <span class="stat-value" id="shellCount">0</span>
-                        </div>
-                        <div class="stat-item">
-                            <span>Time:</span>
-                            <span class="stat-value" id="timeLeft">60s</span>
-                        </div>
-                        <div class="stat-item">
-                            <span>Combo:</span>
-                            <span class="stat-value" id="combo">0</span>
-                        </div>
-                    </div>
-
-                    <div class="combo-indicator" id="comboIndicator"></div>
-                    <div class="sand-particles" id="sandParticles"></div>
-                    <div class="game-wave"></div>
-
-                    <div class="game-instructions">
-                        Click on the seashells to collect them! Get combos for bonus points! 🐚
-                    </div>
-                </div>
-
-                <div class="game-over" id="gameOver">
-                    <div class="game-over-content">
-                        <h4 class="game-over-title">🌊 Game Over!</h4>
-                        <div class="final-score">
-                            Final Score: <span id="finalScore">0</span><br>
-                            Shells Collected: <span id="finalShells">0</span>
-                        </div>
-                        <button class="restart-btn" onclick="restartGame()">🏖️ Play Again</button>
-                        <button class="close-game-btn" onclick="closeGame()">✕ Close Game</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <!-- Emotional Strategy Section -->
         <section class="section animate-on-scroll">
             <div class="section-header">
-                <div class="section-number">09</div>
+                <div class="section-number">08</div>
                 <h2 class="section-title">Emotional Connection Strategy</h2>
                 <p class="section-description">The psychological foundations that drive TSITP's marketing effectiveness.</p>
             </div>
